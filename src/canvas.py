@@ -22,8 +22,8 @@ class Canvas(tk.Canvas):
         self.bind("<Button-1>", lambda event: self.event_manager(event, 1, True))
         self.bind("<ButtonRelease-1>", lambda event: self.event_manager(event, 1, False))
 
-        self.bind("<Button-3>", lambda event: self.event_manager(event, 2, True))
-        self.bind("<ButtonRelease-3>", lambda event: self.event_manager(event, 2, False))
+        self.bind("<Button-3>", lambda event: self.event_manager(event, 3, True))
+        self.bind("<ButtonRelease-3>", lambda event: self.event_manager(event, 3, False))
 
         self.bind("<Motion>", self.event_manager)
 
